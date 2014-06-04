@@ -72,7 +72,7 @@
           <scanIntervalSeconds>0</scanIntervalSeconds>
           <contextPath>/</contextPath>
           <stopKey>foo</stopKey>
-          <stopPort>9999</stopPort>
+          <stopPort>9991</stopPort>
         </configuration>
         <executions>
           <execution>
