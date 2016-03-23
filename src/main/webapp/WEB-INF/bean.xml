@@ -67,7 +67,7 @@
  </bean>
 
  <bean id="sessionFactory"
-  class="org.springframework.orm.hibernate4.LocalSessionFactoryBean"
+  class="org.springframework.orm.hibernate5.LocalSessionFactoryBean"
   destroy-method="destroy">
   <property name="dataSource" ref="dataSource" />
   <property name="packagesToScan" value="com.blizzardtec.app.model" />
@@ -80,7 +80,7 @@
   </property>
  </bean>
 
- <bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+ <bean id="transactionManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
   <property name="sessionFactory" ref="sessionFactory"/>
  </bean>
 
@@ -88,7 +88,7 @@
 
  <bean id="userDao" class="com.blizzardtec.app.dao.UserDaoImpl">
   <constructor-arg>
-   <value>com.blizzardtec.app.model.User</value>
+   <value>com.blizzardtec.app.model.UserObj</value>
   </constructor-arg>
  </bean>
 
