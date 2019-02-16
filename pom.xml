@@ -17,19 +17,18 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <cobertura.version>2.7</cobertura.version>
-    <pmd.version>3.6</pmd.version>
-    <checkstyle.version>2.17</checkstyle.version>
+    <pmd.version>3.11.0</pmd.version>
+    <checkstyle.version>3.0.0</checkstyle.version>
     <spring.version>4.2.4.RELEASE</spring.version>
     <spring-security-version>3.2.5.RELEASE</spring-security-version>
     <cucumber.version>1.2.5</cucumber.version>
-    <selenium.version>3.4.0</selenium.version>
+    <selenium.version>3.141.59</selenium.version>
     <surefire.version>2.20</surefire.version>
     <hibernate.version>5.1.0.Final</hibernate.version>
     <junit.version>4.12</junit.version>
     <hsqldb.version>2.3.3</hsqldb.version>
     <jetty.version>9.3.14.v20161028</jetty.version>
     <maven.version>3.5</maven.version>
-    <java.target>1.8</java.target>
     <mavencompiler.version>3.8.0</mavencompiler.version>
   </properties>
 
@@ -60,9 +59,9 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.15</version>
+        <version>3.0.0-M3</version>
         <configuration>
-          <argLine>-XX:-UseSplitVerifier</argLine>
+<!--           <argLine>-XX:-UseSplitVerifier</argLine> -->
         </configuration>
       </plugin>
       <plugin>
@@ -385,6 +384,26 @@
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-lang3</artifactId>
         <version>3.0</version>
+    </dependency>
+    <dependency>
+        <groupId>javax.xml.bind</groupId>
+        <artifactId>jaxb-api</artifactId>
+        <version>2.2.11</version>
+    </dependency>
+    <dependency>
+        <groupId>com.sun.xml.bind</groupId>
+        <artifactId>jaxb-core</artifactId>
+        <version>2.2.11</version>
+    </dependency>
+    <dependency>
+        <groupId>com.sun.xml.bind</groupId>
+        <artifactId>jaxb-impl</artifactId>
+        <version>2.2.11</version>
+    </dependency>
+    <dependency>
+        <groupId>javax.activation</groupId>
+        <artifactId>activation</artifactId>
+        <version>1.1.1</version>
     </dependency>
   </dependencies>
 </project>
